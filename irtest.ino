@@ -44,6 +44,8 @@ void setup()
 {
     noInterrupts();
     Serial.begin(9600);
+    pinMode(VALVE_1, OUTPUT);
+    pinMode(VALVE_2, OUTPUT);
     digitalWrite(VALVE_1, HIGH);
     digitalWrite(VALVE_2, HIGH);
     pinMode(START_DIODE, OUTPUT);
